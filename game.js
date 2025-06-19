@@ -135,11 +135,11 @@ function render() {
 }
 
 // Game Loop
-btn.addEventListener("click", function () {
-  function gameLoop() {
-    update();
-    render();
-    requestAnimationFrame(gameLoop);
-  }
-});
+
+function gameLoop() {
+  update();
+  render();
+  requestAnimationFrame(gameLoop);
+}
+
 gameLoop();
