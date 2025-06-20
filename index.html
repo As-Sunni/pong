@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Simple Pong Game</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <title>Pong Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h2>Pong Game</h2>
-    <canvas id="pong" width="700" height="400"></canvas>
-    <!-- <button class="btn">Restart</button> -->
-    <script src="game.js"></script>
+  <div class="container">
+    <h1>Pong Game</h1>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="restartBtn">Restart</button>
+    </div>
+    <div class="scoreboard">
+      <span>Score: <span id="score">0</span></span>
+      <span>High Score: <span id="highScore">0</span></span>
+    </div>
+    <p class="instructions">Use W/S or ↑/↓ to move your paddle.</p>
+  </div>
+  <script src="script.js"></script>
 </body>
-
 </html>
